@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缓动动画原理</title>
+    <style>
+        span {
+            position: absolute;
+            left: 0;
+            top: 200px;
+            display: block;
+            width: 150px;
+            height: 150px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>点击出发</button>
+    <span>移动</span>
+    <script>
+        function animate(obj, target) {
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function() {
+                if (obj.offsetLeft < target) {
+                    // obj.style.left = obj.offsetLeft + (target - obj.offsetLeft) / 10 + 'px';
+                    var step = (target - obj.offsetLeft) / 10;
+                } else {
+                    clearInterval(obj.timer);
+                }
+                obj.style.left = obj.offsetLeft + step + 'px';
+            }, 15)
+        }
+        var btn = document.querySelector('button');
+        var span = document.querySelector('span');
+        btn.addEventListener('click', function() {
+            animate(span, 500);
+        })
+    </script>
+</body>
+
+</html>

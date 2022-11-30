@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangle-make</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .box1 {
+            width: 0;
+            height: 0;
+            font-size: 0px;
+            line-height: 0px;
+            border-top: 10px solid red;
+            border-right: 10px solid pink;
+            border-bottom: 10px solid rosybrown;
+            border-left: 10px solid seagreen;
+        }
+        
+        .box2 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 200px 0px;
+            background-color: pink;
+        }
+        
+        .box3 {
+            position: absolute;
+            top: -18px;
+            left: 20px;
+            width: 0;
+            height: 0;
+            font-size: 0px;
+            line-height: 0px;
+            border: 10px solid transparent;
+            border-bottom: 10px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2">
+        <div class="box3"></div>
+
+    </div>
+
+</body>
+
+</html>

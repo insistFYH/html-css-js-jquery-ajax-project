@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "微软雅黑 Regular", 微软雅黑, "Helvetica Neue", Tahoma, Arial, "microsoft yahei", Helvetica, sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 清除浮动 */
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+
+/* 字体图标 */
+
+@font-face {
+    font-family: "iconfont";
+    /* Project id 2980356 */
+    src: url('../fonts/iconfont.woff2?t=1638350618338') format('woff2'), url('../fonts/iconfont.woff?t=1638350618338') format('woff'), url('../fonts/iconfont.ttf?t=1638350618338') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dianzan:before {
+    content: "\e600";
+}
+
+.icon-31pinglun:before {
+    content: "\e601";
+}
+
+.icon-you:before {
+    content: "\e61c";
+}
+
+.box {
+    width: 1200px;
+    height: 800px;
+    margin: 200px auto;
+}
+
+.left {
+    float: left;
+    width: 250px;
+    height: 737px;
+    background: -webkit-linear-gradient(left, #ea5947, rgb(254, 254, 254));
+}
+
+.left ul li {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 1px solid #ea5947;
+}
+
+.left ul li:nth-child(1) {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ea5947;
+}
+
+.left ul li:nth-child(n+2) {
+    position: relative;
+    padding-left: 10px;
+}
+
+.left ul li:nth-child(n+2)::after {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    content: "\e61c";
+    font-family: 'iconfont';
+}
+
+.right {
+    float: left;
+    width: 929px;
+    height: 737px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+}
+
+.right .hd {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ea5947;
+}
+
+.right .bd {
+    position: relative;
+    width: 929px;
+    padding-top: 30px;
+}
+
+.right .bd .outline,
+.right .bd .calendar,
+.right .bd .content,
+.right .bd .plan,
+.right .bd .important,
+.right .bd .method {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+}
+
+.right .bd .outline ul {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.right .bd .outline ul li {
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    border-bottom: 1px solid #ccc;
+}
+
+.right .bd .outline ul li a {
+    color: #000;
+    font-size: 16px;
+}
+
+.right .bd .outline ul li a::before {
+    content: '\e61c';
+    font-family: 'iconfont';
+    margin-right: 5px;
+}
+
+.right .bd .outline ul li a:hover {
+    color: #ea5947;
+}
+
+.right .bd .calendar ul li {
+    float: left;
+    width: 180px;
+    height: 300px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.right .bd .calendar ul li em {
+    display: block;
+    width: 180px;
+    height: 120px;
+    margin-bottom: 10px;
+    background: url(../images/calendar.png);
+    background-size: 180px 192px;
+}
+
+.right .bd .calendar ul li a {
+    color: #000;
+    font-size: 16px;
+}
+
+.right .bd .calendar ul li a:hover {
+    color: #ea5947;
+}
+
+.right .bd .content table,
+.right .bd .important table,
+.right .bd .method table,
+.right .bd .plan table {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #A6C1E4;
+    border-collapse: collapse;
+    font-family: Arial;
+}
+
+.right .bd .content table thead tr th,
+.right .bd .important table thead tr th,
+.right .bd .method table thead tr th {
+    width: 100px;
+    height: 20px;
+    font-size: 16px;
+    border: 1px solid #000;
+    background-color: #71c1fb;
+}
+
+.right .bd .content table tbody tr td,
+.right .bd .important table tbody tr td,
+.right .bd .method table tbody tr td {
+    height: 15px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #A6C1E4;
+}
+
+.weight {
+    color: #ea5947;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画序列、以及常用属性</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            /* animation-play-state: paused; */
+        }
+        
+        @keyframes move {
+            0% {
+                transform: translate(0);
+            }
+            25% {
+                transform: translate(1500px, 0);
+            }
+            50% {
+                transform: translate(1500px, 700px);
+            }
+            75% {
+                transform: translate(0, 700px);
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

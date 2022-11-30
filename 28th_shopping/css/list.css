@@ -1,0 +1,129 @@
+.nav {
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 2px solid #B1191A;
+}
+
+.nav .s_k li {
+    float: left;
+    padding: 0 28.5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.nav .tab_list li {
+    float: left;
+    padding: 0 23px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.nav .tab_list li:nth-child(7) {
+    color: #b1191a;
+}
+
+.nav .tab_list li:last-child::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 3px;
+}
+
+.main .hd {
+    height: 120px;
+    background: url(../upload/bg_03.png) no-repeat;
+}
+
+.main .bd {
+    width: 1300px;
+}
+
+.main .bd ul li {
+    float: left;
+    width: 292.4px;
+    height: 466px;
+    margin: 0px 10px 0 0;
+    border: 1px solid transparent;
+}
+
+.main .bd ul li:hover {
+    border: 1px solid #e12228;
+}
+
+.main .bd ul li a {
+    display: block;
+    width: 292.4px;
+    height: 466px;
+}
+
+.main .bd ul li a h5 {
+    width: 283px;
+    height: 290px;
+    margin-left: 5px;
+    background: url(../images/iphone.png) no-repeat;
+}
+
+.main .bd ul li a p {
+    margin: 7px 12px 7px 16px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.main .bd ul li a .price {
+    height: 18px;
+    margin: 13px 0 0 13px;
+    line-height: 18px;
+}
+
+.main .bd ul li a .price h1 {
+    float: left;
+    color: #E60012;
+}
+
+.main .bd ul li a .price span {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: line-through;
+    color: #b7b7b7;
+}
+
+.main .bd ul li a .sales {
+    margin: 10px 0 0 13px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.main .bd ul li a .sales .process_bar {
+    position: relative;
+    display: inline-block;
+    width: 132px;
+    height: 12px;
+    margin: 0 12px;
+    border-radius: 6px;
+    border: 1px solid #B1191A;
+}
+
+.main .bd ul li a .sales .process_bar::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 115px;
+    height: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #ED282E;
+}
+
+.main .bd ul li a .sales .rest i {
+    color: #e33d41;
+}
+
+.main .bd ul li a button {
+    width: 291px;
+    height: 49.5px;
+    margin-top: 13px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #b1191a;
+}

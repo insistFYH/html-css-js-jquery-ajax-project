@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八方快捷酒店管理系统-员工登录</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/staff.js"></script>
+</head>
+
+<body>
+    <header class="head">
+        <h5></h5>八方快捷酒店前台管理系统
+    </header>
+    <div class="left"></div>
+    <div class="right">
+        <div class="hd clearfix">
+            <div class="function_list">
+                <ul>
+                    <li>为员工所提供功能</li>
+                    <li>预定管理</li>
+                    <li>入住管理</li>
+                    <li>换房管理</li>
+                    <li>续住管理</li>
+                    <li>退房管理</li>
+                    <li>客房管理</li>
+                    <li>退出系统</li>
+                </ul>
+            </div>
+            <div class="main clearfix">
+                <div class="bar">
+                    <span>使用需知</span>
+                </div>
+                <div class="blank"></div>
+                <div class="function">
+                    <div class="tab_list">
+                        <ul>
+                            <li>预定记录</li>
+                            <li>预定添加</li>
+                            <li>预定修改</li>
+                            <li>预定查询</li>
+                            <li>预定删除</li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <div class="block1 group1">
+                            <form action="">
+                                <input type="submit" value="显示" class="show">
+                            </form>
+                        </div>
+                        <div class="block2 group1">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">预定编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_identify">客户身份证号码：</label><input type="text" id="custom_identify"><span></span></li>
+                                    <li><label for="custom_tel">客户手机号码：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">预定客房号：</label><input type="text" id="scheduled_room"><span></span></li>
+                                    <li><label for="scheduled_room_type">预定客房类型：</label><input type="text" id='scheduled_room_type'><span></span></li>
+                                    <li><label for="scheduled_time">预定时间：</label><input type="text" id="scheduled_time"><span></span></li>
+                                    <li><label for="scheduled_begin_live">预计入住时间：</label><input type="text" id="scheduled_begin_live"><span></span></li>
+                                    <li><label for="scheduled_end_leave">预计退房时间：</label><input type="text" id="scheduled_end_leave"><span></span></li>
+                                    <li><label for="scheduled_total_time">预定天数：</label><input type="text" id="scheduled_total_time"><span></span></li>
+                                    <li><label for="scheduled_price">预定金额：</label><input type="text" id="scheduled_price"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="添加">
+                            </form>
+                        </div>
+                        <div class="block32 group1">
+                            <h5>修改前先输入原预定编号或原顾客姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">原预定编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">原客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="scheduled_id">预定编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_identify">客户身份证号码：</label><input type="text" id="custom_identify"><span></span></li>
+                                    <li><label for="custom_tel">客户手机号码：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">预定客房号：</label><input type="text" id="scheduled_room"><span></span></li>
+                                    <li><label for="scheduled_room_type">预定客房类型：</label><input type="text" id='scheduled_room_type'><span></span></li>
+                                    <li><label for="scheduled_time">预定时间：</label><input type="text" id="scheduled_time"><span></span></li>
+                                    <li><label for="scheduled_begin_live">预计入住时间：</label><input type="text" id="scheduled_begin_live"><span></span></li>
+                                    <li><label for="scheduled_end_leave">预计退房时间：</label><input type="text" id="scheduled_end_leave"><span></span></li>
+                                    <li><label for="scheduled_total_time">预定天数：</label><input type="text" id="scheduled_total_time"><span></span></li>
+                                    <li><label for="scheduled_price">预定金额：</label><input type="text" id="scheduled_price"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="修改">
+                            </form>
+                        </div>
+                        <div class="block41 group1">
+                            <h5>请输入要查询预定信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">预定客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="查询">
+                            </form>
+                        </div>
+                        <div class="block5 group1">
+                            <h5>请输入要删除预定信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">预定客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="删除">
+                            </form>
+                        </div>
+                        <div class="block42 group1"></div>
+                        <div class="block1 group2"></div>
+                        <div class="block2 group2">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">入住编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_identify">客户身份证号码：</label><input type="text" id="custom_identify"><span></span></li>
+                                    <li><label for="custom_tel">客户手机号码：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">客房号：</label><input type="text" id="scheduled_room"><span></span></li>
+                                    <li><label for="scheduled_room_type">客房类型：</label><input type="text" id='scheduled_room_type'><span></span></li>
+                                    <li><label for="scheduled_time">客房价格：</label><input type="text" id="scheduled_time"><span></span></li>
+                                    <li><label for="scheduled_begin_live">入住时间：</label><input type="text" id="scheduled_begin_live"><span></span></li>
+                                    <li><label for="scheduled_end_leave">预计退房时间：</label><input type="text" id="scheduled_end_leave"><span></span></li>
+                                    <li><label for="scheduled_total_time">预计入住天数：</label><input type="text" id="scheduled_total_time"><span></span></li>
+                                    <li><label for="total_price">总入住价格：</label><input type="text" id="total_price"><span></span></li>
+                                    <li><label for="scheduled_price">押金：</label><input type="text" id="scheduled_price"><span></span></li>
+                                    <li><label for="run_staff_name">操作人姓名：</label><input type="text" id="run_staff_name"><span></span></li>
+                                    <li><label for="run_staff_tel">操作人电话：</label><input type="text" id="run_staff_tel"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="添加">
+                            </form>
+                        </div>
+                        <div class="block31 group2">
+                            <h5>请输入要修改入住信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="确定" class="sure">
+                            </form>
+                        </div>
+                        <div class="block41 group2">
+                            <h5>请输入要查询入住信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="查询">
+                            </form>
+                        </div>
+                        <div class="block5 group2">
+                            <h5>请输入要删除入住信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="删除">
+                            </form>
+                        </div>
+                        <div class="block32 group2">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">入住编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_identify">客户身份证号码：</label><input type="text" id="custom_identify"><span></span></li>
+                                    <li><label for="custom_tel">客户手机号码：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">客房号：</label><input type="text" id="scheduled_room"><span></span></li>
+                                    <li><label for="scheduled_room_type">客房类型：</label><input type="text" id='scheduled_room_type'><span></span></li>
+                                    <li><label for="scheduled_time">客房价格：</label><input type="text" id="scheduled_time"><span></span></li>
+                                    <li><label for="scheduled_begin_live">入住时间：</label><input type="text" id="scheduled_begin_live"><span></span></li>
+                                    <li><label for="scheduled_end_leave">预计退房时间：</label><input type="text" id="scheduled_end_leave"><span></span></li>
+                                    <li><label for="scheduled_total_time">预计入住天数：</label><input type="text" id="scheduled_total_time"><span></span></li>
+                                    <li><label for="total_price">总入住价格：</label><input type="text" id="total_price"><span></span></li>
+                                    <li><label for="scheduled_price">押金：</label><input type="text" id="scheduled_price"><span></span></li>
+                                    <li><label for="run_staff_name">操作人姓名：</label><input type="text" id="run_staff_name"><span></span></li>
+                                    <li><label for="run_staff_tel">操作人电话：</label><input type="text" id="run_staff_tel"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="修改">
+                            </form>
+                        </div>
+                        <div class="block42 group2"></div>
+                        <div class="block1 group3"></div>
+                        <div class="block2 group3">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">换房编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_tel">客户手机号码：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">原客房号：</label><input type="text" id="scheduled_room"><span></span></li>
+                                    <li><label for="scheduled_room_type">原客房类型：</label><input type="text" id='scheduled_room_type'><span></span></li>
+                                    <li><label for="scheduled_time">原客房价格：</label><input type="text" id="scheduled_time"><span></span></li>
+                                    <li><label for="scheduled_begin_live">换客房号：</label><input type="text" id="scheduled_begin_live"><span></span></li>
+                                    <li><label for="scheduled_end_leave">换客房类型：</label><input type="text" id="scheduled_end_leave"><span></span></li>
+                                    <li><label for="scheduled_total_time">换客房价格：</label><input type="text" id="scheduled_total_time"><span></span></li>
+                                    <li><label for="total_price">换房时间：</label><input type="text" id="total_price"><span></span></li>
+                                    <li><label for="run_staff_name">操作人姓名：</label><input type="text" id="run_staff_name"><span></span></li>
+                                    <li><label for="run_staff_tel">操作人电话：</label><input type="text" id="run_staff_tel"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="添加">
+                            </form>
+                        </div>
+                        <div class="block31 group3">
+                            <h5>请输入要修改换房信息的原客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">原客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="确定" class="sure">
+                            </form>
+                        </div>
+                        <div class="block41 group3">
+                            <h5>请输入要查询换房信息的原客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">原客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="查询">
+                            </form>
+                        </div>
+                        <div class="block5 group3">
+                            <h5>请输入要删除换房信息的原客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">原客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="删除">
+                            </form>
+                        </div>
+                        <div class="block32 group3">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">换房编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_tel">客户手机号码：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">原客房号：</label><input type="text" id="scheduled_room"><span></span></li>
+                                    <li><label for="scheduled_room_type">原客房类型：</label><input type="text" id='scheduled_room_type'><span></span></li>
+                                    <li><label for="scheduled_time">原客房价格：</label><input type="text" id="scheduled_time"><span></span></li>
+                                    <li><label for="scheduled_begin_live">换客房号：</label><input type="text" id="scheduled_begin_live"><span></span></li>
+                                    <li><label for="scheduled_end_leave">换客房类型：</label><input type="text" id="scheduled_end_leave"><span></span></li>
+                                    <li><label for="scheduled_total_time">换客房价格：</label><input type="text" id="scheduled_total_time"><span></span></li>
+                                    <li><label for="total_price">换房时间：</label><input type="text" id="total_price"><span></span></li>
+                                    <li><label for="run_staff_name">操作人姓名：</label><input type="text" id="run_staff_name"><span></span></li>
+                                    <li><label for="run_staff_tel">操作人电话：</label><input type="text" id="run_staff_tel"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="修改">
+                            </form>
+                        </div>
+                        <div class="block42 group3"></div>
+                        <div class="block1 group4"></div>
+                        <div class="block2 group4">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">续住编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_tel">客户手机号码：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">续住客房号：</label><input type="text" id="scheduled_room"><span></span></li>
+                                    <li><label for="scheduled_room_type">续住客房类型：</label><input type="text" id='scheduled_room_type'><span></span></li>
+                                    <li><label for="scheduled_time">入住时间：</label><input type="text" id="scheduled_time"><span></span></li>
+                                    <li><label for="scheduled_begin_live">已住时间：</label><input type="text" id="scheduled_begin_live"><span></span></li>
+                                    <li><label for="scheduled_end_leave">续住开始时间：</label><input type="text" id="scheduled_end_leave"><span></span></li>
+                                    <li><label for="scheduled_total_time">预计续住结束时间：</label><input type="text" id="scheduled_total_time"><span></span></li>
+                                    <li><label for="total_price">续住总天数：</label><input type="text" id="total_price"><span></span></li>
+                                    <li><label for="scheduled_price">续住总价格：</label><input type="text" id="scheduled_price"><span></span></li>
+                                    <li><label for="run_staff_name">操作人姓名：</label><input type="text" id="run_staff_name"><span></span></li>
+                                    <li><label for="run_staff_tel">操作人电话：</label><input type="text" id="run_staff_tel"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="添加">
+                            </form>
+                        </div>
+                        <div class="block31 group4">
+                            <h5>请输入要修改续住信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="确定" class="sure">
+                            </form>
+                        </div>
+                        <div class="block41 group4">
+                            <h5>请输入要查询续住信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="查询">
+                            </form>
+                        </div>
+                        <div class="block5 group4">
+                            <h5>请输入要删除续住信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="删除">
+                            </form>
+                        </div>
+                        <div class="block32 group4">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">续住编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_tel">客户手机号码：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">续住客房号：</label><input type="text" id="scheduled_room"><span></span></li>
+                                    <li><label for="scheduled_room_type">续住客房类型：</label><input type="text" id='scheduled_room_type'><span></span></li>
+                                    <li><label for="scheduled_time">入住时间：</label><input type="text" id="scheduled_time"><span></span></li>
+                                    <li><label for="scheduled_begin_live">已住时间：</label><input type="text" id="scheduled_begin_live"><span></span></li>
+                                    <li><label for="scheduled_end_leave">续住开始时间：</label><input type="text" id="scheduled_end_leave"><span></span></li>
+                                    <li><label for="scheduled_total_time">预计续住结束时间：</label><input type="text" id="scheduled_total_time"><span></span></li>
+                                    <li><label for="total_price">续住总天数：</label><input type="text" id="total_price"><span></span></li>
+                                    <li><label for="scheduled_price">续住总价格：</label><input type="text" id="scheduled_price"><span></span></li>
+                                    <li><label for="run_staff_name">操作人姓名：</label><input type="text" id="run_staff_name"><span></span></li>
+                                    <li><label for="run_staff_tel">操作人电话：</label><input type="text" id="run_staff_tel"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="修改">
+                            </form>
+                        </div>
+                        <div class="block42 group4"></div>
+                        <div class="block1 group5"></div>
+                        <div class="block2 group5">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">退房编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_tel">客户手机号码：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">客房号：</label><input type="text" id="scheduled_room"><span></span></li>
+                                    <li><label for="scheduled_room_type">客房类型：</label><input type="text" id='scheduled_room_type'><span></span></li>
+                                    <li><label for="scheduled_time">客房价格：</label><input type="text" id="scheduled_time"><span></span></li>
+                                    <li><label for="scheduled_begin_live">入住时间：</label><input type="text" id="scheduled_begin_live"><span></span></li>
+                                    <li><label for="scheduled_end_leave">退房时间：</label><input type="text" id="scheduled_end_leave"><span></span></li>
+                                    <li><label for="scheduled_total_time">总住天数：</label><input type="text" id="scheduled_total_time"><span></span></li>
+                                    <li><label for="total_price">总住价格：</label><input type="text" id="total_price"><span></span></li>
+                                    <li><label for="run_staff_name">操作人姓名：</label><input type="text" id="run_staff_name"><span></span></li>
+                                    <li><label for="run_staff_tel">操作人电话：</label><input type="text" id="run_staff_tel"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="添加">
+                            </form>
+                        </div>
+                        <div class="block31 group5">
+                            <h5>请输入要修改退房信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="确定" class="sure">
+                            </form>
+                        </div>
+                        <div class="block41 group5">
+                            <h5>请输入要查询退房信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="查询">
+                            </form>
+                        </div>
+                        <div class="block5 group5">
+                            <h5>请输入要删除退房信息的客房号或客户姓名</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="删除">
+                            </form>
+                        </div>
+                        <div class="block32 group5">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">退房编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客户姓名：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_tel">客户手机号码：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">客房号：</label><input type="text" id="scheduled_room"><span></span></li>
+                                    <li><label for="scheduled_room_type">客房类型：</label><input type="text" id='scheduled_room_type'><span></span></li>
+                                    <li><label for="scheduled_time">客房价格：</label><input type="text" id="scheduled_time"><span></span></li>
+                                    <li><label for="scheduled_begin_live">入住时间：</label><input type="text" id="scheduled_begin_live"><span></span></li>
+                                    <li><label for="scheduled_end_leave">退房时间：</label><input type="text" id="scheduled_end_leave"><span></span></li>
+                                    <li><label for="scheduled_total_time">总住天数：</label><input type="text" id="scheduled_total_time"><span></span></li>
+                                    <li><label for="total_price">总住价格：</label><input type="text" id="total_price"><span></span></li>
+                                    <li><label for="run_staff_name">操作人姓名：</label><input type="text" id="run_staff_name"><span></span></li>
+                                    <li><label for="run_staff_tel">操作人电话：</label><input type="text" id="run_staff_tel"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="修改">
+                            </form>
+                        </div>
+                        <div class="block42 group5"></div>
+                        <div class="block1 group6"></div>
+                        <div class="block2 group6">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客房号：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_tel">客房类型：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">客房价格：</label><input type="text" id="scheduled_room"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="添加">
+                            </form>
+                        </div>
+                        <div class="block31 group6">
+                            <h5>请输入要修改客房信息的客房号</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="确定" class="sure">
+                            </form>
+                        </div>
+                        <div class="block41 group6">
+                            <h5>请输入要查询客房信息的客房号</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="查询">
+                            </form>
+                        </div>
+                        <div class="block5 group6">
+                            <h5>请输入要删除客房信息的客房号</h5>
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="删除">
+                            </form>
+                        </div>
+                        <div class="block32 group6">
+                            <form action="">
+                                <ul>
+                                    <li><label for="scheduled_id">客房编号：</label><input type="text" id="scheduled_id"><span></span></li>
+                                    <li><label for="custom_name">客房号：</label><input type="text" id="custom_name"><span></span></li>
+                                    <li><label for="custom_tel">客房类型：</label><input type="text" id="custom_tel"><span></span></li>
+                                    <li><label for="scheduled_room">客房价格：</label><input type="text" id="scheduled_room"><span></span></li>
+                                </ul>
+                                <input type="reset" value="清空"><input type="submit" value="修改">
+                            </form>
+                        </div>
+                        <div class="block42 group6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft">
+            <span class="user">当前用户：FYH</span>
+            <span class="time">456</span>
+        </div>
+    </div>
+</body>
+
+</html>

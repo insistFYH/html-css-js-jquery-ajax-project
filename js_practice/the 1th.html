@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arguemnts,遍历对象,倒计时效果,数组、字符串操作</title>
+    <script>
+        //利用arguments
+        function fun() {
+
+            for (var i = 0; i < arguments.length; i++) {
+                console.log(arguments[i]);
+            }
+        }
+        fun(1, 2, 3, 4, 5);
+        fun(10, 9, 3, 4, 5);
+
+
+
+        //遍历对象
+        var person = {
+            name: 'lili',
+            age: '20',
+            education: 'academic',
+            hobby: function() {
+                console.log("我喜欢打篮球");
+            }
+
+        }
+        for (key in person) {
+            console.log(key);
+            console.log(person[key]);
+        }
+
+
+
+
+        person.hobby();
+        //倒计时效果
+        function countTime(time) {
+            var nowTime = +new Date();
+            var inputTime = +new Date(time);
+            var secondStep = (inputTime - nowTime) / 1000;
+            var d = parseInt(secondStep / 60 / 60 / 24);
+            d = d < 10 ? '0' + d : d;
+            var h = parseInt(secondStep / 60 / 60 % 24);
+            h = h < 10 ? '0' + h : h;
+            var m = parseInt(secondStep / 60 % 60);
+            m = m < 10 ? '0' + m : m;
+            var s = parseInt(secondStep % 60);
+            s = s < 10 ? '0' + s : s;
+            return '还剩下' + d + '天' + h + '时' + m + '分' + s + '秒';
+
+        }
+
+        console.log(countTime('2021-10-16 21:27:30'));
+        var arr = [9, 6, 3, 10, 12, 8, 2, 6, 7];
+
+
+
+
+        //翻转数组
+        arr.reverse();
+        console.log(arr);
+        //数组排序
+        arr.sort(function(a, b) {
+            return a - b; //升序
+        })
+        console.log(arr);
+        //添加、删除数组
+        arr.push('zhong', 666)
+        console.log(arr);
+        arr.unshift('ni', 111);
+        console.log(arr);
+        arr.pop();
+        console.log(arr);
+        arr.shift();
+        console.log(arr);
+        //数组去重
+        function uniqueArr(arr) {
+            var newArr = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (newArr.indexOf(arr[i]) == -1) {
+                    newArr.push(arr[i]);
+
+                }
+
+            }
+            return newArr;
+        }
+        var arr = [2, 3, 6, 5, 5, 6, 50, 6];
+        console.log(uniqueArr(arr));
+        //转换为字符串
+        console.log(arr.toString());
+        console.log(arr.join('|'));
+        //连接数组
+        var a = [1, 2, 3, 7, 8, 9];
+        var b = [4, 5, 6, 10, 11, 12];
+        console.log(a.concat(b));
+        //截取数组
+        console.log(a.slice(1, 3));
+        //数组删除
+        console.log(b.splice(1, 3));
+
+
+
+        //字符串中某个字符出现的位置和次数
+        var str = 'qweqrtqyuiopqa';
+        var position = str.indexOf('q', 0);
+        var num = 0;
+        console.log('出现的位置:');
+        while (position != -1) {
+            console.log(position);
+            num++;
+            position = str.indexOf('q', position + 1);
+        }
+        console.log('出现的次数' + num);
+        //根据位置返回元素
+        console.log(str.charAt(4));
+        console.log(str[4]);
+        //根据位置返回元素的ASCll值
+        console.log(str.charCodeAt(13));
+        //统计出现最多的字符和出现次数
+        var v = 'aaaabbbbcccccccccccdjafaejkkkl';
+        var o = {};
+        for (var i = 0; i < v.length; i++) {
+            var chars = v.charAt(i);
+            if (o[chars]) {
+                o[chars]++;
+            } else o[chars] = 1;
+        }
+        console.log(o);
+        var ch = '';
+        var max = 0;
+        for (key in o) {
+            if (o[key] > max) {
+                max = o[key];
+                ch = key;
+            }
+        }
+        console.log('出现最多的字符为：' + ch + '  出现次数为：' + max);
+        //截取字符串
+        console.log(v.substr(3, 4));
+        //替换字符(只会替换一个)
+        console.log(v.replace('k', 'p'));
+        //转换为数组
+        var str = 'red,pink,blue';
+        console.log(str.split(','));
+        //转为大写、小写
+        var t = 'bbbNNN'
+        console.log(t.toUpperCase());
+        console.log(t.toLowerCase());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

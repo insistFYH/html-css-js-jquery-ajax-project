@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开关灯</title>
+</head>
+
+<body style="background-color:rgb(255,255,255);">
+    <button id="contr">开关灯</button>
+    <script>
+        var contr = document.getElementById('contr');
+        var flag = 0;
+        contr.onclick = function() {
+            if (flag == 0) {
+                document.body.style.backgroundColor = 'black';
+                flag = 1;
+            } else {
+                document.body.style.backgroundColor = '#fff';
+                flag = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

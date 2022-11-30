@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内块元素的巧妙运用，三角强化的巧妙运用,视频音频</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .page_select {
+            text-align: center;
+        }
+        
+        .page_select a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid rgb(204, 204, 204);
+            background-color: rgb(247, 247, 247);
+            color: rgb(51, 51, 51);
+        }
+        
+        .page_select .prev,
+        .page_select .next {
+            width: 80px;
+        }
+        
+        .page_select .no_border {
+            border: none;
+            background-color: #fff;
+        }
+        
+        .page_select .in {
+            width: 40px;
+            height: 35px;
+            outline: none;
+            border: 1px solid rgb(204, 204, 204);
+        }
+        
+        .page_select .sure {
+            width: 55px;
+            height: 35px;
+            border: 1px solid rgb(204, 204, 204);
+            background-color: rgb(247, 247, 247);
+        }
+        
+        .box {
+            width: 160px;
+            height: 26px;
+            margin: 100px auto;
+            border: 1px solid red;
+        }
+        
+        .now {
+            position: relative;
+            display: inline-block;
+            width: 90px;
+            height: 26px;
+            text-align: center;
+            line-height: 26px;
+            font-weight: 700;
+            color: #fff;
+            background-color: red;
+        }
+        
+        .old {
+            font-size: 12px;
+            text-decoration: line-through;
+            color: rgb(128, 128, 128);
+        }
+        
+        .now i {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 0px;
+            height: 0px;
+            line-height: 0px;
+            font-size: 0px;
+            border-color: transparent white transparent transparent;
+            border-width: 26px 8px 0px 0px;
+            border-style: solid;
+        }
+        
+        .music {
+            width: 300px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page_select">
+        <a href="#" class="prev">&lt;&lt;上一页</a>
+        <a href="#" class="no_border">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#" class="no_border">...</a>
+        <a href="#" class="next">下一页&gt;&gt;</a> 到第
+        <input type="text" class="in"> 页
+        <button class="sure">确定</button>
+    </div>
+    <div class="box">
+        <span class="now">
+            <i>
+                
+
+            </i>
+            ￥1650</span>
+        <span class="old">￥5650</span>
+
+    </div>
+    <video src="media/mi.mp4" autoplay="autoplay" muted="muted" loop="loop" poster="media/mi9.jpg">
+
+    </video>
+    <audio class="music" src="media/music.mp3" autoplay="autoplay" controls></audio>
+
+</body>
+
+</html>

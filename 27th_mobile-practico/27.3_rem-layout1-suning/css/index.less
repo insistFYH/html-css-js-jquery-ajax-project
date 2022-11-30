@@ -1,0 +1,91 @@
+@import "common";
+body{
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial,Helvetica;
+    background: #f2f2f2;
+}
+
+@n:50;
+.search_wrap{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:(750rem / @n);
+    height: (88rem / @n);
+    font-size: (24rem / @n);
+    background-color: rgb(255, 192, 1);
+    .classify{
+        display: block;
+        width: (44rem / @n);
+        height: (70rem / @n);
+        margin: (9rem / @n) (22rem / @n);
+        background:url(../images/classify.png) no-repeat;
+        background-size: (44rem / @n) (70rem / @n);
+    }
+    .search{
+        flex: 1;
+        input{
+            width: (562rem / @n);
+            height: (66rem / @n);
+            margin:(11rem / @n) 0;
+            border: 0;
+            outline: none;
+            text-indent: (50rem / @n);
+            color: #666;
+            border-radius: (66rem / @n);
+            background-color: rgb(255, 242, 204);
+        }
+    }
+    .login{
+        display: block;
+        width: (75rem / @n);
+        height: (70rem / @n);
+        margin:  (9rem / @n) (11rem / @n);
+        color: #f2f2f2;
+        text-align: center;
+        line-height: (70rem / @n);
+    }
+
+}
+.banner{
+    width: (750rem / @n);
+    height: (368rem / @n);
+    img{
+        width: 100%;
+    }
+}
+
+.ad{
+    display: flex;
+    width: (750rem / @n);
+    height: (212rem / @n);
+    a{
+        flex: 1;
+        img{
+            width: 100%;
+        }
+    }
+}
+.nav{
+    a{
+        float: left;
+        width: (150rem / @n);
+        height: (140rem / @n);
+        text-align: center;
+        img{
+            display: block;
+            width: (82rem / @n);
+            height: (82rem / @n);
+            margin: (10rem / @n) auto (-15rem / @n);
+        }
+        span{
+        font-size: (24rem / @n);
+        color: #333;
+        }
+    }
+}

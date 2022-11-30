@@ -1,0 +1,331 @@
+.nav {
+    height: 45px;
+    border-bottom: 2px solid #B1191A;
+}
+
+.nav .w {
+    height: 45px;
+}
+
+.nav .w .dropdown {
+    float: left;
+}
+
+.nav .w .dropdown dt {
+    width: 209px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #B1191A;
+}
+
+.nav .w .dropdown dd a {
+    position: relative;
+    display: block;
+    width: 209px;
+    height: 39px;
+    padding: 10px 0 0 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: 1px solid #C81623;
+    background-color: #C81623;
+}
+
+.nav .w .dropdown dd a:hover {
+    border-right: none;
+    color: #C81623;
+    background-color: #fff;
+}
+
+.nav .w .dropdown dd a::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    position: absolute;
+    top: 12px;
+    right: 5px;
+}
+
+.nav .navitems ul li {
+    float: left;
+    padding: 0 26px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    color: #333;
+}
+
+.main {
+    width: 1000px;
+    height: 458px;
+    margin: 10px 0 0 219px;
+}
+
+.main .focus {
+    float: left;
+    width: 721px;
+    height: 458px;
+    background: url(../upload/focus1.png) no-repeat;
+    background-size: auto 458px;
+}
+
+.main .newsflash {
+    float: left;
+    width: 250px;
+    height: 458px;
+    margin-left: 10px;
+}
+
+.main .newsflash .news {
+    height: 166px;
+    border: 1px solid #ccc;
+}
+
+.main .newsflash .news .hd {
+    height: 32px;
+    padding: 0 16px;
+    color: #333333;
+    text-align: center;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main .newsflash .news .hd .title {
+    float: left;
+    font-size: 14px;
+}
+
+.main .newsflash .news .hd .more {
+    float: right;
+    font-size: 12px;
+}
+
+.main .newsflash .news .hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    margin-left: 5px;
+}
+
+.main .newsflash .news .bd {
+    padding: 12px 0 0 17px;
+}
+
+.main .newsflash .news .bd ul li:nth-child(n+2) {
+    margin-top: 3px;
+}
+
+.main .newsflash .lifeservice ul li {
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(1),
+.main .newsflash .lifeservice ul li:nth-child(5),
+.main .newsflash .lifeservice ul li:nth-child(9) {
+    border-left: 1px solid #ccc;
+}
+
+.main .newsflash .lifeservice ul li a {
+    display: block;
+    width: 61.2px;
+    height: 70px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main .newsflash .lifeservice ul li a h4 {
+    width: 31px;
+    height: 31px;
+    margin: auto;
+    background: url(../images/icons.png) -13px -13px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(2) a h4 {
+    background: url(../images/icons.png) -77px -13px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(3) a h4 {
+    background: url(../images/icons.png) -139px -13px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(4) a h4 {
+    background: url(../images/icons.png) -202px -13px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(5) a h4 {
+    background: url(../images/icons.png) -13px -87px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(6) a h4 {
+    background: url(../images/icons.png) -77px -87px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(7) a h4 {
+    background: url(../images/icons.png) -139px -87px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(8) a h4 {
+    background: url(../images/icons.png) -202px -87px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(9) a h4 {
+    background: url(../images/icons.png) -13px -158px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(10) a h4 {
+    background: url(../images/icons.png) -77px -158px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(11) a h4 {
+    background: url(../images/icons.png) -139px -158px;
+}
+
+.main .newsflash .lifeservice ul li:nth-child(12) a h4 {
+    background: url(../images/icons.png) -202px -158px;
+}
+
+.main .ad h4 {
+    width: 250px;
+    height: 75px;
+    margin-top: 217px;
+    background: url(../upload/bargain.png) no-repeat;
+}
+
+.recommand {
+    height: 163px;
+    margin-top: 11px;
+}
+
+.recommand .w {
+    height: 163px;
+    background-color: #EBEBEB;
+}
+
+.recommand .w h5 {
+    float: left;
+    width: 206px;
+    height: 163px;
+    background: url(../images/今日推荐.png) no-repeat center #5C5251;
+}
+
+.recommand .w ul li a {
+    float: left;
+    display: block;
+    width: 248px;
+    height: 163px;
+    background: url(../upload/recom_03.jpg) no-repeat;
+}
+
+.floor .jiadian {
+    width: 100%;
+    height: 340px;
+}
+
+.floor .jiadian .hd {
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 2px solid #C81623;
+}
+
+.floor .jiadian .hd h5 {
+    float: left;
+    font-size: 18px;
+    color: #C81623;
+}
+
+.floor .jiadian .hd {
+    position: relative;
+}
+
+.floor .jiadian .hd ul {
+    position: absolute;
+    right: 0;
+}
+
+.floor .jiadian .hd ul li {
+    position: relative;
+    float: left;
+    padding: 0 18px;
+    font-size: 12px;
+    color: #666;
+}
+
+.floor .jiadian .hd ul li:last-child {
+    padding-right: 5px;
+}
+
+.floor .jiadian .hd ul li:first-child {
+    color: #c81623;
+}
+
+.floor .jiadian .hd ul li:nth-child(n+2):before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '|';
+    color: #ccc;
+}
+
+.floor .jiadian .bd ul li {
+    float: left;
+}
+
+.floor .jiadian .bd ul li a {
+    display: block;
+}
+
+.floor .jiadian .bd ul li:nth-child(1) a {
+    width: 209px;
+    height: 360px;
+    background: url(../upload/floor-made.png) no-repeat;
+}
+
+.floor .jiadian .bd ul li:nth-child(2) a {
+    width: 330px;
+    height: 360px;
+    background: url(../upload/floor-1-b01.png) no-repeat;
+}
+
+.floor .jiadian .bd ul li:nth-child(3) a {
+    border-bottom: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;
+}
+
+.floor .jiadian .bd ul li:nth-child(3) a:nth-child(1) {
+    width: 219px;
+    height: 180px;
+    background: url(../upload/floor-1-2.png) no-repeat;
+}
+
+.floor .jiadian .bd ul li:nth-child(3) a:nth-child(2) {
+    width: 219px;
+    height: 180px;
+    background: url(../upload/floor-1-3.png) no-repeat;
+}
+
+.floor .jiadian .bd ul li:nth-child(4) a {
+    width: 219px;
+    height: 360px;
+    border-bottom: 1px solid #EDEDED;
+    background: url(../upload/floor-1-4.png) no-repeat;
+}
+
+.floor .jiadian .bd ul li:nth-child(5) a {
+    border-bottom: 1px solid #EDEDED;
+    border-left: 1px solid #EDEDED;
+}
+
+.floor .jiadian .bd ul li:nth-child(5) a:nth-child(1) {
+    width: 219px;
+    height: 180px;
+    background: url(../upload/floor-1-5.png) no-repeat;
+}
+
+.floor .jiadian .bd ul li:nth-child(5) a:nth-child(2) {
+    width: 219px;
+    height: 180px;
+    background: url(../upload/floor-1-6.png) no-repeat;
+}

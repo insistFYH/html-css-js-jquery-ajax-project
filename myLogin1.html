@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYH-登录界面</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.pixabay.com/photo/2021/08/19/14/00/field-6558125_960_720.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .contain{     
+            position: fixed;     
+            background-color:rgb(105, 102, 102,0.3);
+            width: 400px;
+            height: 500px;        
+            left: 550px;
+            top: 100px;
+            border-radius: 15px;
+        }
+        .title{
+            position: absolute;       
+            top: 70px;
+            left: 175px;
+            font-size: 24px;
+            font-weight: bold;
+
+        }
+        .shuru{
+            position: absolute;
+            top: 150px;
+            left: 105px;
+
+        }
+        .shuru-item{
+            display: block;          
+            outline: none;
+            border: 0;
+            border-bottom: 1px solid rgb(94, 93, 93);
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 15px;
+            background-color: rgb(241, 226, 226,0.2);
+           
+        }
+        .shuru-item:placeholder{
+            text-transform: uppercase;
+        }
+        .submit{
+            position: absolute;
+            left: 180px;
+            top: 300px;
+            width: 60px;
+            background-color: rgb(138, 138, 136,0.7);
+            border-radius: 15px;
+            font-size: 15px;
+
+        }
+        .msg{
+            position: absolute;
+            left: 100px;
+            top: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <text class="title" selectable="false" space="false" decode="false">Login</text>
+        <div>
+            <form action="" class="shuru">
+                <input type="text" name="username" class="shuru-item" placeholder="username">
+                <br>
+                <input type="passward" name="passward" class="shuru-item" placeholder="passward">
+            </form>
+            <button class="submit">Login</button>
+            <div class="msg">
+                Don't have account?
+                <a href="">Sign up</a>
+            </div>      
+        </div>
+    </div>
+</body>
+</html>

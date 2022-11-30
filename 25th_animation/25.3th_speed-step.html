@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>速度曲线步长</title>
+    <style>
+        div {
+            overflow: hidden;
+            width: 0;
+            height: 30px;
+            font-size: 20px;
+            background-color: pink;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: move 4s steps(10) forwards;
+        }
+        
+        @keyframes move {
+            0% {}
+            100% {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>我在远方等你来可好啊</div>
+</body>
+
+</html>

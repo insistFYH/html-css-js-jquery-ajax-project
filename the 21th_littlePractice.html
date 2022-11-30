@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字省略 margin负值巧妙应用 文字环绕图片效果</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .box1 {
+            width: 150px;
+            height: 80px;
+            margin: 50px auto;
+            /* 单行文字省略 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background-color: gray;
+        }
+        
+        .box2 {
+            width: 150px;
+            height: 43px;
+            margin: 100px auto;
+            /* 多行文字省略 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            background-color: gray;
+        }
+        /* - 如果没有定位，则加相对定位（保留位置）
+- 如果有定位，则加z-index */
+        
+        .block ul li {
+            float: left;
+            width: 150px;
+            height: 200px;
+            margin-left: -1px;
+            border: 1px solid blue;
+        }
+        
+        .block ul li:hover {
+            position: relative;
+            border-color: red;
+        }
+        
+        .box3 {
+            width: 310px;
+            height: 80px;
+            padding: 5px;
+            margin: 400px 50px;
+            background-color: pink;
+        }
+        
+        .box3 .pic {
+            float: left;
+            width: 130px;
+            height: 70px;
+        }
+        
+        .box3 .pic img {
+            width: 100%;
+        }
+    </style>
+</head>
+<div class="box1">你你你你你你你你你你你你你你你您你</div>
+<div class="box2">是事实是事实是烧死是事实是事实是事实和</div>
+<div class="block">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="box3">
+    <div class="pic">
+        <img src="images/nei.png" alt="">
+    </div>
+    <p>【集锦】热身赛-巴西0-1秘鲁 内马尔替补两人血染赛场</p>
+
+</div>
+
+<body>
+
+</body>
+
+</html>
